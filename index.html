@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio horizontal simples">
+    <link rel="shortcut icon" href="/logo.png" type="image/png">
+    <title>Portfólio de Marcos Antonio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <section id="nav-fixed">
+                <span>
+                    <label for="nav-home" class="navbar-name">Marcos</label>
+                </span>
+                <nav class="navbar">
+                    <ul>
+                        <li><input checked="true" type="radio" name="item" id="nav-home"><label for="nav-home" class="navbar-item">Home</label></li>
+                        <li><input type="radio" name="item" id="nav-about"><label for="nav-about" class="navbar-item">Sobre</label></li>
+                        <li><input type="radio" name="item" id="nav-skills"><label for="nav-skills" class="navbar-item">Habilidades</label></li>
+                        <li><input type="radio" name="item" id="nav-contact"><label for="nav-contact" class="navbar-item">Contatos</label></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="carousel">
+                <div class="scroll">
+                    <div class="carousel-item carousel-home">
+                        <div class="text-home">
+                            <h2 class="text-content">
+                                Olá,<br>
+                                Eu sou <span class="name-home">Marcos</span><br>
+                                Web Developer
+                            </h2>
+                            <label for="nav-contact" class="contact-button">Contatos</label>
+                        </div>
+                        <div class="photo-home">
+                            <img class="photo-perfil" src="./perfil.png" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-about">
+                        <h2 class="title-about">Sobre mim</h2>
+                        <div class="about-photo-text">
+                            <div class="photo-about">
+                                <img class="photo-perfil2" src="./perfil2.png" alt="">
+                            </div>
+                            <p class="about-text-content">
+                                Sou um estudante de graduação do curso de Ciências da Computação pela Universidade Federal de Campina Grande. Também, sou formado como Técnico em Informática pelo Instituto Federal da Paraíba, local onde tive meus primeiros contatos no ramo de tecnologia. Atualmente, trabalho como desenvolvedor web front end e estou iniciando meus estudos na etapa de back end a fim de me tornar um programador full stack.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-skills">
+                        <h2 class="title-skills">Habilidades</h2>
+                        <div class="skills">
+                            <span class="skill">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML 5</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS 3</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>Javascript</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-typescript-plain colored"></i>
+                                <span>Typescript</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-react-plain colored"></i>
+                                <span>ReactJS</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <span>NodeJS</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-npm-original-wordmark colored"></i>
+                                <span>NPM</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-java-plain colored"></i>
+                                <span>Java</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-postgresql-plain colored"></i>
+                                <span>PostgreSQL</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>GIT</span>
+                            </span>
+                            <span class="skill">
+                                <i class="devicon-github-plain colored"></i>
+                                <span>GitHub</span>
+                            </span>
+                        </div>
+                        <span class="skills-projects">Acompanhe <a href="https://github.com/MarcosAntonio15243?tab=repositories" title="Projetos do Github" target="_blank">meus projetos</a>.</span>
+                    </div>
+                    <div class="carousel-item carousel-contacts">
+                        <h2 class="title-contacts">Fale comigo</h2>
+                        <form class="contacts-form">
+                            <input type="text" name="fullName" id="full-name" placeholder="Nome Completo">
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                            <textarea name="message" id="message" placeholder="Mensagem" rows="8"></textarea>
+                            <input type="submit" name="btnSubmit" id="btn-submit" placeholder="Enviar">
+                        </form>
+                        <div class="contacts-list">
+                            <a href="https://github.com/MarcosAntonio15243" title="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/marcos-antonio-18059b234" title="LinkedIn" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://www.facebook.com/marcosantonio.santos.777363" title="Facebook" target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://www.instagram.com/marcos_sa16" title="Instagram" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

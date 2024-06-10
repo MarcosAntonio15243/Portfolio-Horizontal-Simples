@@ -1,0 +1,300 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fafafa;
+    --dark-gray: #444444;
+    --red: #FF2525;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #dcdedd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-size: 0.95rem;
+    width: 80vw;
+    height: 85vh;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow:  0 0.4rem 1rem hsl(0 0% 0% / 20%);
+    overflow: hidden;
+}
+
+/* ========== NAVBAR ========== */
+
+#nav-fixed {
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 6rem;
+    box-shadow: 0 0 0.3rem hsla(0, 0%, 0%, 0.096);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar-name, .navbar-item {
+    color: var(--dark-gray);
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.navbar-name:hover, .navbar-item:hover {
+    border-bottom: 2px solid var(--red);
+}
+
+.navbar input[type="radio"] {
+    display: none;
+}
+.navbar input[type="radio"]:checked + .navbar-item {
+    border-bottom: 2px solid var(--red);
+}
+
+
+/* ========== CARROSSEL ========== */
+
+/* teste */
+#carousel {
+    height: 70vh;
+    width: 80vw;
+    position: relative;
+    overflow: hidden;
+}
+.scroll {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    transition: 0.5s;
+}
+
+#carousel .carousel-item {
+    height: 70vh;
+    min-width: calc(80vw - 12rem);
+    margin: 0 6rem;
+}
+
+/* ========== CARROSSEL - HOME ========== */
+
+.carousel-home {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-home .text-content {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.carousel-home .name-home {
+    color: var(--red);
+}
+.carousel-home .contact-button {
+    cursor: pointer;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+}
+.carousel-home .contact-button:hover {
+    background-color: #eb0000;
+}
+
+.carousel-home .photo-home img {
+    width: clamp(200px, 250px, 300px);
+}
+
+/* ========== CARROSSEL - ABOUT ========== */
+
+.carousel-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-about .title-about {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #FF2525;
+    margin: 2rem 0;
+}
+
+.carousel-about .about-text-content {
+    font-size: 1.1rem;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+.carousel-about .about-photo-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.carousel-about .photo-about img {
+    width: clamp(200px, 250px, 300px);
+    border: 3px solid var(--red);
+    border-radius: 50%;
+}
+
+/* ========== CARROSSEL - SKILLS ========== */
+
+.carousel-skills {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel-skills .title-skills {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #FF2525;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.carousel-skills .skills {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.carousel-skills .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-skills .skill i {
+    font-size: 4rem;
+}
+
+.carousel-skills .skill span {
+    font-weight: 500;
+}
+
+.carousel-skills .skills-projects {
+    font-size: 1rem;
+    margin: 3rem 0;
+}
+.carousel-skills .skills-projects a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--red);
+}
+.carousel-skills .skills-projects a:hover {
+    color: #ff0c0c;
+}
+
+/* ========== CARROSSEL - CONTACTS ========== */
+
+.carousel-contacts {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel-contacts .title-contacts {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #FF2525;
+    margin: 2rem 0;
+}
+
+.carousel-contacts .contacts-form {
+    min-width: 50vw;
+    display: grid;
+    grid-template-areas: 
+        "fullName email"
+        "message message"
+        "btnSubmit btnSubmit";
+    gap: 0.5rem;
+}
+
+.carousel-contacts .contacts-form #full-name {
+    grid-area: fullName;
+}
+.carousel-contacts .contacts-form #email {
+    grid-area: email;
+}
+.carousel-contacts .contacts-form #message {
+    grid-area: message;
+}
+.carousel-contacts .contacts-form #btn-submit {
+    grid-area: btnSubmit;
+    width: 6rem;
+    margin: 1rem auto 1.4rem auto;
+    background-color: var(--red);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+}
+.carousel-contacts .contacts-form #btn-submit:hover {
+    background-color: #ff0b0b;
+}
+
+
+.carousel-contacts .contacts-form input,
+.carousel-contacts .contacts-form textarea {
+    font-size: 0.8rem;
+    outline: none;
+    border: none; 
+}
+
+.carousel-contacts .contacts-form #full-name,
+.carousel-contacts .contacts-form #email,
+.carousel-contacts .contacts-form #message {
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.carousel-contacts .contacts-list {
+    display: flex;
+    gap: 0.5rem;
+}
+.carousel-contacts .contacts-list a {
+    text-decoration: none;
+}
+.carousel-contacts .contacts-list i {
+    font-size: 1.1rem;
+    border: 2px solid rgb(15, 15, 15);
+    color: rgb(15, 15, 15);
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+.carousel-contacts .contacts-list i:hover {
+    border: 2px solid var(--red);
+    color: var(--red);
+    transition: 0.3s;
+}
+
