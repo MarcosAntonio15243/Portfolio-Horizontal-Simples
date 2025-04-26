@@ -7,6 +7,12 @@
 
 Este projeto é uma implementação de um portfólio horizontal simples desenvolvido utilizando HTML, CSS e Javascript.
 
+## 📱 Responsividade
+
+Este projeto está atualmente otimizado apenas para resoluções desktop.
+O suporte para tablets e dispositivos móveis ainda não foi implementado.
+Atualizações futuras poderão incluir a adaptação completa para oferecer uma melhor experiência em todos os dispositivos.
+
 ## 🎨 Créditos
 
 O projeto é baseado no design [Portfolio Responsive Complete](https://github.com/bedimcode/portfolio-responsive-complete), criado por [Bedimcode](https://github.com/bedimcode).
