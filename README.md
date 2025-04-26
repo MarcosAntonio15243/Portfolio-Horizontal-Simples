@@ -31,22 +31,22 @@ Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests.
 ### 🏠 1. Home
 A primeira seção apresenta uma breve saudação, com o nome do usuário e sua profissão, além de uma imagem de perfil própria.
 
-![](/assets/preview/home.png)
+![](/assets/preview/home.webp)
 
 ### 👤 2. Sobre Mim
 Seção dedicada à trajetória, habilidades gerais, formação e um pouco da personalidade.
 
-![](/assets/preview/about.png)
+![](/assets/preview/about.webp)
 
 ### 🧠 3. Habilidades
 Área visual que apresenta as tecnologias que o usuário domina.
 
-![](/assets/preview/skills.png)
+![](/assets/preview/skills.webp)
 
 ### 📞 4. Contato
 Seção para contatos, contendo um form com nome, email e mensagem que se deseja mandar ao usuário do portfólio. Além disso, ao final, estão ícones para os meios de contato: GitHub, LinkedIn, Facebook e Instagram.
 
-![](/assets/preview/contact.png)
+![](/assets/preview/contact.webp)
 
 ## 🔗 Entre em contato comigo
 
