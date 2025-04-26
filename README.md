@@ -22,10 +22,6 @@ O projeto é baseado no design [Portfolio Responsive Complete](https://github.co
 
 Com o repositório clonado, abra o ```index.html``` em seu navegador (Se estiver no [Visual Studio Code](https://code.visualstudio.com) pode usar a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)) para rodar o projeto.
 
-## 🤝 Contribuindo
-
-Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
-
 ## 🖼️ Seções e Prévias do Portfolio
 
 ### 🏠 1. Home
@@ -47,6 +43,10 @@ Seção dedicada à trajetória, habilidades gerais, formação e um pouco da pe
 Seção para contatos, contendo um form com nome, email e mensagem que se deseja mandar ao usuário do portfólio. Além disso, ao final, estão ícones para os meios de contato: GitHub, LinkedIn, Facebook e Instagram.
 
 ![](/assets/preview/contact.webp)
+
+## 🤝 Contribuindo
+
+Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
 
 ## 🔗 Entre em contato comigo
 
