@@ -1,20 +1,27 @@
-var navItem = document.getElementsByClassName('navbar-item');
-var scroll = document.getElementsByClassName('scroll')[0];
+// Select elements
+const navItems = document.querySelectorAll('.navbar-item');
+const scrollContainer = document.querySelector('.scroll');
+const navbarName = document.querySelector('.navbar-name');
+const contactButton = document.querySelector('.contact-button');
 
-function controlScroll(value) {
-    scroll.style.left = `calc(${value}*(-80vw))`;
+// Function to control the scroll
+function controlScroll(index) {
+    if (scrollContainer) {
+        scrollContainer.style.left = `calc(${index} * -80vw)`;
+    }
 }
 
-document.getElementsByClassName('navbar-name')[0].addEventListener("click", function() {
-    controlScroll(0);
-});
-document.getElementsByClassName('contact-button')[0].addEventListener("click", function() {
-    controlScroll(3);
-});
-
-
-for (let index = 0; index < navItem.length; index++) {
-    navItem[index].addEventListener("click", function() {
-        controlScroll(index);
-    });
+// Event for the navbar name
+if (navbarName) {
+    navbarName.addEventListener('click', () => controlScroll(0));
 }
+
+// Event for the contact button
+if (contactButton) {
+    contactButton.addEventListener('click', () => controlScroll(3));
+}
+
+// Event for each navbar item
+navItems.forEach((item, index) => {
+    item.addEventListener('click', () => controlScroll(index));
+});
