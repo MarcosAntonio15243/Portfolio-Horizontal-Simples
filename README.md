@@ -18,7 +18,6 @@ O projeto é baseado no design [Portfolio Responsive Complete](https://github.co
 - **JavaScript**: Funcionalidades interativas, animações e interações.
 - **Devicon**: Ícones das tecnologias utilizadas em meus projetos, integrados para facilitar a visualização das minhas habilidades.
 
-
 ## ▶️ Como Rodar o Projeto
 
 Com o repositório clonado, abra o ```index.html``` em seu navegador (Se estiver no [Visual Studio Code](https://code.visualstudio.com) pode usar a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)) para rodar o projeto.
@@ -27,5 +26,31 @@ Com o repositório clonado, abra o ```index.html``` em seu navegador (Se estiver
 
 Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
 
-## 🖼️ Prévia do Portfolio
+## 🖼️ Seções e Prévias do Portfolio
 
+### 🏠 1. Home
+A primeira seção apresenta uma breve saudação, com o nome do usuário e sua profissão, além de uma imagem de perfil própria.
+
+![](/assets/preview/home.png)
+
+### 👤 2. Sobre Mim
+Seção dedicada à trajetória, habilidades gerais, formação e um pouco da personalidade.
+
+![](/assets/preview/about.png)
+
+### 🧠 3. Habilidades
+Área visual que apresenta as tecnologias que o usuário domina.
+
+![](/assets/preview/skills.png)
+
+### 📞 4. Contato
+Seção para contatos, contendo um form com nome, email e mensagem que se deseja mandar ao usuário do portfólio. Além disso, ao final, estão ícones para os meios de contato: GitHub, LinkedIn, Facebook e Instagram.
+
+![](/assets/preview/contact.png)
+
+## 🔗 Entre em contato comigo
+
+Você pode me encontrar nas seguintes plataformas:
+
+- **LinkedIn**: https://www.linkedin.com/in/marcos-antonio-18059b234/
+- **GitHub**: https://github.com/MarcosAntonio15243
